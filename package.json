@@ -1,0 +1,34 @@
+{
+  "name": "duckdb-sql-syntax-highlighting-in-python",
+  "displayName": "DuckDB SQL syntax highlighting in Python",
+  "description": "A VSCode extension for formatting DuckDB SQL strings in .py files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "sql",
+        "aliases": [
+          "SQL",
+          "sql"
+        ],
+        "extensions": [
+          ".py"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "sql",
+        "scopeName": "source.python",
+        "path": "./syntaxes/sql.tmLanguage.json"
+      }
+    ]
+  }
+}
