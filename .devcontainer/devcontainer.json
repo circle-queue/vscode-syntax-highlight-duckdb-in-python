@@ -9,8 +9,8 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"onCreateCommand": "npm install -g yo generator-code",
-	"postCreateCommand": "npm install"
+	"onCreateCommand": "npm install -g yo generator-code @vscode/vsce",
+	"postCreateCommand": "npm install && vsce package && code --install-extension duckdb-sql*"
 	// Configure tool-specific properties.
 	// "customizations": {},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.

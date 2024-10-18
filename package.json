@@ -2,6 +2,7 @@
   "name": "duckdb-sql-syntax-highlighting-in-python",
   "displayName": "DuckDB SQL syntax highlighting in Python",
   "description": "A VSCode extension for formatting DuckDB SQL strings in .py files",
+  "publisher": "circle-queue",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.94.0"
@@ -9,25 +10,24 @@
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+    "url": "https://github.com/circle-queue/vscode-syntax-highlight-duckdb-in-python"
+  },
+  "files": [
+    "syntaxes/injection.json",
+    "LICENSE"
+  ],
   "contributes": {
-    "languages": [
-      {
-        "id": "sql",
-        "aliases": [
-          "SQL",
-          "sql"
-        ],
-        "extensions": [
-          ".py"
-        ],
-        "configuration": "./language-configuration.json"
-      }
-    ],
     "grammars": [
       {
-        "language": "sql",
-        "scopeName": "source.python",
-        "path": "./syntaxes/sql.tmLanguage.json"
+        "path": "./syntaxes/injection.json",
+        "scopeName": "python-sql.injection",
+        "injectTo": [
+          "source.python"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.sql": "sql"
+        }
       }
     ]
   }
