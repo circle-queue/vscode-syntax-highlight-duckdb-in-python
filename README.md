@@ -15,3 +15,6 @@ vsce package && code --uninstall-extension duckdb-sql* && code --install-extensi
 ```
 Not sure if you you also need to reload:
 `CTRL+SHIFT+P -> Developer: Reload Window`
+
+## Multi-line match support
+This is quite tricky. See this issue: https://github.com/microsoft/vscode-textmate/issues/41
