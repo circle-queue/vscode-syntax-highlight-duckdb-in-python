@@ -20,12 +20,13 @@ duckdb.sql("""
 x = "foo"
 duckdb.execute(f"""
     SELECT *
-    FROM {x};
+    FROM foo
+    WHERE x = {x};
 """)
 
-# Single line
-duckdb.sql(" SELECT * FROM foo; SELECT * FROM bar; ")
-duckdb.sql(""" SELECT * FROM foo; SELECT * FROM bar; """)
+# Single line non-multiline strings are not supported
+duckdb.sql(" SELECT * FROM foo WHERE x = 'bar'; SELECT * FROM bar; ")
+duckdb.sql(""" SELECT * FROM foo WHERE x = 'bar'; SELECT * FROM bar; """)
 
 duckdb.aggregate("""SELECT * FROM foo;""")
 # Normal multi-line is not highlighted

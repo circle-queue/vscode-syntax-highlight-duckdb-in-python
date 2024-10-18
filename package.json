@@ -3,7 +3,7 @@
   "displayName": "DuckDB SQL syntax highlighting in Python",
   "description": "A VSCode extension for formatting DuckDB SQL strings in .py files",
   "publisher": "circle-queue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.94.0"
   },

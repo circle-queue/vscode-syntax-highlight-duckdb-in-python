@@ -11,7 +11,7 @@ https://github.com/ptweir/python-string-sql/tree/master (MIT License)
 If you want to experiment with another regex match in in [syntaxes/injection.json](./syntaxes/injection.json?plain=1#L4), you need to ensure the extension is refreshed.
 
 ```sh
-vsce package && code --uninstall-extension duckdb-sql* && code --install-extension duckdb-sql*`
+vsce package && code --uninstall-extension duckdb-sql* && code --install-extension duckdb-sql*
 ```
 Not sure if you you also need to reload:
 `CTRL+SHIFT+P -> Developer: Reload Window`

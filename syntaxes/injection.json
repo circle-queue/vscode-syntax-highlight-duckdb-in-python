@@ -1,8 +1,8 @@
 {
     "patterns": [
         {
-            "begin": ".*(sql|execute)[(]\\s*[f\"']{1,4}",
-            "end": "['\"]{1,3}",
+            "begin": ".*(sql|execute)[(f\"']{4,5}",
+            "end": "['\"]{3,3}",
             "captures": {
                 "1": {
                     "name": "variable.parameter"
