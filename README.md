@@ -7,6 +7,11 @@ https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#inj
 
 https://github.com/ptweir/python-string-sql/tree/master (MIT License)
 
+## Installation
+Requires dev container extension
+
+CTRL + SHIFT + P -> Rebuild and reopen in devcontainer
+
 ## Rebuilding
 If you want to experiment with another regex match in in [syntaxes/injection.json](./syntaxes/injection.json?plain=1#L4), you need to ensure the extension is refreshed.
 
